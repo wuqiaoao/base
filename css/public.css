@@ -1,0 +1,56 @@
+/*样式重置*/
+html,body,h1,h2,h3,h4,h5,h6,a,p,div,span,ul,ol,li,dl,dd,dt,strong,em,i,b,ins,del,form,fieldset,label,input,select,textarea,button,option,table,tbody,thead,tfoot,tr,th,td,caption{margin: 0;padding: 0;box-sizing: border-box;}
+html,body{width: 100%;height: 100%;}
+body {font: 12px/22px "Microsoft yahei", Arial, Verdana, Helvetica, sans-serif;}
+button,input,textarea,select,option {outline: none;border: 0;}
+ul,li{list-style: none;}
+i,b,em{font-style: normal;}
+img{vertical-align: middle;}
+a,a:focus,a:active{text-decoration: none;color: #333333;}
+button{cursor: pointer;}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+}
+/*------浮动------*/
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/*清除浮动*/
+.clearfix:after {
+  display: block;
+  content: "";
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+/*表单提示文字 颜色变化*/
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder {
+  color: #d1d1d1;
+}
+
+/*单行以及多行省略号*/
+/*oy-single-text单行文本*/
+.single-text {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/*oy-moreLine-text 多行文本*/
+.moreLine-text {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
